@@ -1,0 +1,30 @@
+Eric Chow
+
+1) s1 has a size of 5 because c-strings must contain a null character at the end. 
+Because of that, c-strings have to contain 1 more byte than the number of characters.
+
+2) s1==s2 returns false because the equality operator is comparing the pointers, which 
+are pointing to different memory addresses.
+
+3) s3 and s4 c-strings. When == is used, their values are compared, which is why true is returned.
+
+4) The values stored in v are all 8 because v is storing the memory addresses, which need 8 bits each.
+If the starting address of d is 500, then d[0] has address 500, d[1] 508, d[2] 516, d[3] 524, d[4] 532.
+
+5) p1 is initialized as a pointer to the first char in string s4. p1 is then used to change the first char in s4
+into 'j'. The last letter in s4 is changed by creating a pointer to the address of the last letter, and assigning
+the value as 's'.
+
+6) The null character is represented as a \0. Because of that, when the value of s5 is changed, everything after
+the \0 is discarded and only "zoey" is kept.
+
+7) q1 + q2 is would be 10 + (-2), or 8.
+
+8) Because q is an array, it is also implicitly a pointer to the first element of q. Therefore, q would be the
+memory address of the first element which is also the starting address of the array.
+
+9) The memory addresses would be different because different processes take up space as needed, so a program is not
+guaranteed to occupy the same space each time is ran.
+
+10) The memory addresses for 9 are being displayed in base-10, while the addresses for 10 are being displayed in
+hexadecimal.
